@@ -319,6 +319,9 @@ h3{
     padding: 2% 5%;
     height: 0px;
   }
+  .wave-cont{
+  top: 43%;
+}
   .mob{
     display: block;
   }
