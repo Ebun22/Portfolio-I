@@ -328,10 +328,13 @@ h3{
     font-size: 2em;
   }
   .lg{
-    bottom: 60%;
+    bottom: 58%;
     text-align: center;
     width: 100%;
     margin: auto;
+  }
+  .top{
+    right: 15%;
   }
   .color{
     background-color: hsla(120, 70%, 19%, 1)
