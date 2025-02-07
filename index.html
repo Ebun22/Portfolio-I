@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="//use.fontawesome.com/590c12121e.js"></script>
-    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css" >
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="web-fonts-with-css/css/fontawesome-all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
   </head>
   <body>
     <aside>
       <div class="nav-top">
         <div class="person-avatar hide">
-          <img src="images/thumbnail.jpeg" class="profile-img" alt="profile-pic" />
+          <img
+            src="images/thumbnail.jpeg"
+            class="profile-img"
+            alt="profile-pic"
+          />
         </div>
         <div class="name">
-          <p class="text header center">EBUNOLUWA DAVID-SUBERU</p>
-          <p class="text sub-head center">Web Developer</p>
+          <p class="text header center text-xl pt-1">EBUNOLUWA DAVID-SUBERU</p>
+          <p class="text sub-head center font-semibold">Web Developer</p>
         </div>
       </div>
       <div class="hbg mob">
@@ -29,135 +46,201 @@
       </div>
       <div class="close fade mob">X</div>
       <div class="nav-cont li-dis">
-        <ul class="nav-list">
+        <ul class="nav-list text-xl font-bold mt-0">
           <a href="#about"><li class="li">About</li></a>
           <a href="#projects"><li class="li">Projects</li></a>
           <a href="#hobbies"><li class="li">Hobbies</li></a>
-          <a href="#contact"><li class="li">Contact</li></a>
+          <a href="#contact"><li class="li contact">Contact</li></a>
         </ul>
-      </div>
-      <div class="socials desk">
-        <ul class="socials-list li-dis">
-          <li class="li"><a href="mailto:subeydavid22@gmail.com" target="_blank">
-            <span class="icon">
-              <i class="fas fa-envelope"></i>
-            </span></a></li>
-          <li class="li"><a href="https://mobile.twitter.com/ArtSubey" target="_blank">
-            <span class="icon">
-              <i class="fab fa-twitter"></i>
-            </span>
-          </a></li>
-          <li class="li"><a href="https://github.com/Ebun22" target="_blank">
-            <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-          </a></li>
-        </ul>
+
+        <div class="socials desk">
+          <ul class="socials-list li-dis flex gap-8 pt-4">
+            <li class="li">
+              <a href="mailto:subeydavid22@gmail.com" target="_blank">
+                <span class="icon">
+                  <i class="fas fa-envelope"></i> </span
+              ></a>
+            </li>
+            <li class="li">
+              <a href="https://mobile.twitter.com/ArtSubey" target="_blank">
+                <span class="icon">
+                  <i class="fab fa-twitter"></i>
+                </span>
+              </a>
+            </li>
+            <li class="li">
+              <a href="https://github.com/Ebun22" target="_blank">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </aside>
+
     <div class="right">
       <div class="green top">
-        <span class=" icon-2 up-icon"><i class="fas fa-arrow-up"></i>  <span>TOP</span></span>
+        <span class="icon-2 up-icon"
+          ><i class="fas fa-arrow-up"></i> <span>TOP</span></span
+        >
       </div>
       <header>
-        <div class="cont">
-          <div class="fixed-header">
-            <div class="wave-cont">
-              <img src="images/wave.png" class="wave"/>
+          <div class="relative h-screen cont">
+            <div class="flex w-full bg-black relative z-50">
+              <p class="text xl bg-black">Hi, I'm Ebun</p>
+              <div
+                class="w-fit flex justify-end relative items-center pl-6 mt-1 wave-cont"
+              >
+                <img src="images/wave.png" class="wave" />
+              </div>
             </div>
-            <p class="text xl top-ani">Hi, I'm Ebun</p>
-            <p class="text xl xl-2">A self-taught FrontEnd Developer.</p>
-              <p class="lg">I build asthetic and responsive websites</p>
-            </p>
+            <p class="text xl xl-2 bg-black">A self-taught FrontEnd Developer.</p>
+            <p class="xl-3 lg top-[40%] pt-2">I build asthetic and responsive websites</p>
           </div>
-        </div>
       </header>
       <main>
         <div id="about">
-          <h3 class="center">ABOUT</h3>
-          <img src="images/about-2.jpg" class="abt-pic"/>
-          <p class="text">I'm a self taught Front End Developer currently in the my 3rd year at
-            the University of Ilorin in Kwara state Nigeria. I'm based in Portharcourt
-            Nigeria.<br /><br />
-            I have always had a flare for programming and building softwares and was first introduced
-            to programming in 2018 with the language JAVA. During the lockdown in 2020, I started webdevelopment with
-            a focus to build responsive, accessible and aesthetic websites/ web apps.<br /><br />
-            Since I began my journey as a webdeveloper I have learnt HTML,CSS,Javascript,React, React Native,
-            and I'm conversent with various CSS frameworks. Being curious and eager to grow, I learnt the basics of Node.JS, MongoDB and
-            Express.js as well and can apply this knowledge in simple projects.
+          <h3 class="center text-4xl font-bold">ABOUT</h3>
+          <p class="text-justify text">
+            I'm a self taught fullstack developer that has always had a flare for building softwares.
+            I was first introduced to programming in 2018 with the language JAVA.
+            During the lockdown in 2020, I started webdevelopment with a focus
+            to build responsive, accessible and aesthetic websites/ web apps.
+            In that time, I have worked with several companies and done various personal projects that solidified my knowledge in 
+            HTML, CSS, Javascript, React, Typescript, Node.js, several frameworks and Js libraries for both backend and frontend programming. 
+          </p>
         </div>
-        <div id="projects">
-          <h3 class="center">PROJECTS</h3>
+
+        <div id="projects ">
+          <h3 class="mt-10 center text-4xl font-bold pt-6">PROJECTS</h3>
 
           <div class="proj-desk mob-card">
             <div class="img-card animate-left">
-              <img src="images/sound.png" class="soudm-img" />
-            </div><!--END OF IMG-CARD-->
+              <img src="images/sound.png" class="w-full h-full" />
+            </div>
+            <!--END OF IMG-CARD-->
             <div class="card-content animate-right">
-              <p>MY PORTFOLIO</p>
+              <p>Sales Page</p>
               <div class="card-text">
-                <p class="text">This website was designed to bring a store’s products to life through dynamic animations, creating an engaging experience for customers. Every element has been crafted to captivate and showcase items in the most visually striking way. The clean and modern design helps visitors easily explore the offerings, while seamless transitions make navigation intuitive. This site perfectly blends creativity and functionality, leaving a lasting impression on potential clients.
+                <p class="text">
+                  Designed and developed by me to highlights producs in a store
+                  through dynamic animations, creating an engaging experience
+                  for customers. This site perfectly blends creativity and 
+                  functionality, leaving a lasting impression on potential clients.
                 </p>
-                <a href="https://github.com/Ebun22/Portfolio-I.git" class="button" target="_blank">View Source Code</a>
-              </div><!--END OF CARD-TEXT-->
-            </div><!--END OF CARD-CONTENT-->
-          </div><!--END OF MOB-CARD-->
+                <a
+                  href="https://github.com/Ebun22/Portfolio-I.git"
+                  class="button"
+                  target="_blank"
+                  >View Source Code</a
+                >
+              </div>
+              <!--END OF CARD-TEXT-->
+            </div>
+            <!--END OF CARD-CONTENT-->
+          </div>
+          <!--END OF MOB-CARD-->
 
           <div class="proj-desk mob-card">
             <div class="img-card animate-left">
               <img src="images/96Capitals.png" class="proj-img" />
-            </div><!--END OF IMG-CARD-->
+            </div>
+            <!--END OF IMG-CARD-->
             <div class="card-content animate-right">
               <p>96Capitals</p>
               <div class="card-text">
-                <p class="text">I was contracted to build this site but I'm allowed to only preview the demo website.
-                  Its for a yet to launch company called 96Capitals
-                  which is invested in solving world problems by offering capital to entrepreneur. For this I used vanilla Javascript and CSS.
+                <p class="text">
+                  I was contracted to build this site but I'm allowed to only
+                  preview the demo website. Its for a yet to launch company
+                  called 96Capitals which is invested in solving world problems
+                  by offering capital to entrepreneur. For this I used vanilla
+                  Javascript and CSS.
                 </p>
-                <a href="https://github.com/Ebun22/96capitals.git" target="_blank" class="button">View Source Code</a>
-              </div><!--END OF CARD-TEXT-->
-            </div><!--END OF CARD-CONTENT-->
-          </div><!--END OF MOB-CARD-->
+                <a
+                  href="https://github.com/Ebun22/96capitals.git"
+                  target="_blank"
+                  class="button"
+                  >View Source Code</a
+                >
+              </div>
+              <!--END OF CARD-TEXT-->
+            </div>
+            <!--END OF CARD-CONTENT-->
+          </div>
+          <!--END OF MOB-CARD-->
 
           <div class="proj-desk mob-card">
             <div class="img-card animate-left">
               <img src="images/ml.png" class="proj-img" />
-            </div><!--END OF IMG-CARD-->
-            <div class="card-content animate-right">
-              <p>MY Portfolio</p>
+            </div>
+            <!--END OF IMG-CARD-->
+            <div class="pt-8 card-content animate-right">
+              <p>Manage's Landing Page</p>
               <div class="card-text">
-                <p class="text">This is a project is personally decided to do from FrontEnd Mentors
-                  using vanilla Javascript and CSS.
+                <p class="text">
+                  This is a project is a landing page built with
+                   vanilla Javascript and CSS with the intent of showcasing
+                   how intrecate design elements can be neatly overlapped to replicate
+                   the figma design.
                 </p>
-                <a href="https://github.com/Ebun22/Manage-landing-Page.git" class="button" target="_blank">View Source Code</a>
-              </div><!--END OF CARD-TEXT-->
-            </div><!--END OF CARD-CONTENT-->
-          </div><!--END OF MOB-CARD-->
+                <a
+                  href="https://github.com/Ebun22/Manage-landing-Page.git"
+                  class="button"
+                  target="_blank"
+                  >View Source Code</a
+                >
+              </div>
+              <!--END OF CARD-TEXT-->
+            </div>
+            <!--END OF CARD-CONTENT-->
+          </div>
+          <!--END OF MOB-CARD-->
 
           <div class="proj-desk mob-card">
             <div class="img-card animate-left">
               <img src="images/dahrk.png" class="proj-img" />
-            </div><!--END OF IMG-CARD-->
-            <div class="card-content animate-right">
+            </div>
+            <!--END OF IMG-CARD-->
+            <div class="pt-4 card-content animate-right">
               <p>DAHRK MUSIC</p>
               <div class="card-text">
-                <p class="text">This was my first contract, a client requested for a site that previewed all his songs with links to all
-                  streaming sites it was available.
-                  I did a few designs with various color themes and this one was decided on. It was built with vanilla
+                <p class="text">
+                  This was my first contract, a client requested for a site that
+                  previewed all his songs with links to all streaming sites it
+                  was available. I did a few designs with various color themes
+                  and this one was decided on. It was built with vanilla
                   Javascript and CSS as well.
                 </p>
-                <a href="https://github.com/Ebun22/DarhkMusic.git" class="button" target="_blank">View Source Code</a>
-              </div><!--END OF CARD-TEXT-->
-            </div><!--END OF CARD-CONTENT-->
-          </div><!--END OF MOB-CARD-->
+                <a
+                  href="https://github.com/Ebun22/DarhkMusic.git"
+                  class="button"
+                  target="_blank"
+                  >View Source Code</a
+                >
+              </div>
+              <!--END OF CARD-TEXT-->
+            </div>
+            <!--END OF CARD-CONTENT-->
+          </div>
+          <!--END OF MOB-CARD-->
 
-          <a href="https://github.com/Ebun22/" class="button final-btn" target="_blank">View other Projects</a>
-        </div><!--END OF PROJECTS-->
+          <a
+            href="https://github.com/Ebun22/"
+            class="button final-btn"
+            target="_blank"
+            >View other Projects</a
+          >
+        </div>
+        <!--END OF PROJECTS-->
         <div id="hobbies">
           <h3 class="center">HOBBIES</h3>
           <div class="hobb-cont">
             <p class="text">
-              Although I love coding and watching repeated tutorial videos, I have other hobbies I indulge in such as art,<br /> basketball and reading.
+              Although I love coding and watching repeated tutorial videos, I
+              have other hobbies I indulge in such as art,<br />
+              basketball and reading.
             </p>
             <!-- <div class="bball-cont hobb">
               <p class="text">Here is a picture of My friends and I after a basketball game. Basketball happens to be my favourite sport.</p>
@@ -175,8 +258,10 @@
         </div>
         <div id="contact">
           <h3 class="center">CONTACT</h3>
-          <p class="text center">Impressed by what you have seen so far?<br />
-          Then contact me via any of the following medias:</p>
+          <p class="text center">
+            Impressed by what you have seen so far?<br />
+            Then contact me via any of the following medias:
+          </p>
           <div class="social-cont">
             <div class="social">
               <a href="mailto:subeydavid22@gmail.com" target="_blank">
@@ -196,13 +281,22 @@
               </a>
             </div>
             <div class="drive">
-              <a href="https://drive.google.com/file/d/1iIsSkyQPwLDUI0NZK06TS-uWE5b-EIAS/view?usp=sharing" target="_blank">Download my resume</a>
+              <a
+                href="https://drive.google.com/file/d/1th-v4e2XIqXB7bnhcdeRzo3OY4Zx2COB/view?usp=sharing"
+                target="_blank"
+                >Download my resume</a
+              >
             </div>
           </div>
         </div>
       </main>
       <footer>
-          <p class="green">Designed and built by <a href="https://github.com/Ebun22" target="_blank">Ebunoluwa david</a></p>
+        <p class="green">
+          Designed and built by
+          <a href="https://github.com/Ebun22" target="_blank"
+            >Ebunoluwa david</a
+          >
+        </p>
       </footer>
     </div>
     <script src="script.js" type="text/javascript"></script>

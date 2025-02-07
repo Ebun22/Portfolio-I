@@ -22,12 +22,13 @@ body{
   z-index: -2;
   position: fixed;
 }
+
 a,li, ul li{
  list-style: none;
  text-decoration: none;
  color: #8eaf8e;
 }
-ul li:hover{
+ul li:hover, .fab:hover, .fas:hover{
   color: #fff;
 }
 aside{
@@ -63,36 +64,52 @@ header .cont{
   margin-bottom: 0px;
 }
 .top-ani{
-  position: absolute;
-  z-index: 2;
+  /* position: absolute;
+  z-index: 2; */
   background-color: #000;
   padding-top: 10%;
-  width: 100%;
+  width: 80%;
   margin-bottom: 0%;
   margin-top:0%;
 }
+.wave-container{
+ display:flex;
+  flex-direction: row;
+  width: 100%;
+}
 .xl-2{
-  height: 40vh;
+  /* height: 40vh; */
   margin-bottom: 0px;
-  padding-top: 40px;
   position: absolute;
-  z-index: -1;
+  z-index: 10;
   animation-name: drop;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 @keyframes drop {
   from {top: 0px; opacity: 0; color: #fff;}
-  to {top: 200px; color: #8eaf8e; opacity: 1;}
+  to {top: 100px; color: #8eaf8e; opacity: 1; }
 }
+/* .xl-3{
+  position: absolute;
+  z-index: 5;
+  animation-name: secondDrop;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0
+}
+@keyframes secondDrop {
+  from {top: 0%; opacity: 0; color: #000;}
+  to {top: 40%; color: #8eaf8e; opacity: 1;}
+} */
 .lg{
   font-size: 1em;
   margin-right: 0;
   position: absolute;
-  bottom: 13%;
+ 
   color: #8eaf8e;
 }
-.wave-cont{
+/* .wave-cont{
   float:right;
   width: 50%;
   position: absolute;
@@ -100,7 +117,7 @@ header .cont{
   top: 41.5%;
   right: 0;
   left: 43%;
-}
+} */
 .wave-cont img{
   width: 50px;
   height: 50px;
@@ -109,11 +126,11 @@ header .cont{
 }
 @keyframes wave{
     0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   10% { transform: rotate(24.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
    20% { transform: rotate(-8.0deg) }
    30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
+   40% { transform: rotate(-8.0deg) }
+   50% { transform: rotate(20.0deg) }
    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
 }
@@ -143,10 +160,9 @@ header .cont{
  transition: all 0.65s ease-in-out;
 }
 h3{
-  color: #10b381;
-  font-weight: 800;
-  font-size: 2em;
+  color: #8eaf8e;
   margin-bottom: 0px;
+  padding-bottom: 10px;
 }
 .person-avatar{
   border-radius: 50%;
@@ -160,11 +176,17 @@ h3{
     height: 30%;
 }
 .nav-list{
+  padding-bottom: 0px;
+  margin-top: 10%;
+}
+.nav-cont{
   padding: 9.6%;
-  margin-top: 20%;
 }
 .li{
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+}
+.contact{
+  padding-bottom: 10px;
 }
 .abt-pic{
   width: 200px;
@@ -175,7 +197,7 @@ h3{
 .proj-desk{
   display: flex;
   flex-direction: row;
-  padding: 70px 0px;
+  padding: 50px 0px;
   border-bottom:1px dotted #fff;
   justify-content: space-between;
 }
@@ -195,6 +217,7 @@ h3{
  }
  .img-card{
    width: 55%;
+   height: 300px
  }
  .card-content{
    width: 40%;
@@ -397,7 +420,7 @@ h3{
   }
   .nav-cont, .nav-list a li,.desk, ul.nav-list{
     display: block;
-    margin: 0%;
+    margin: 0px;
     text-align: center;
     padding: 1% 9.6%;
   }
