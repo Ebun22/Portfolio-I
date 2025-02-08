@@ -338,12 +338,15 @@ h3{
     background-color:hsla(120, 70%, 19%, 0);
     position: relative  !important;
     z-index:2;
-    width: 90%;
+    width: 100%;
     padding: 2% 5%;
     height: 0px;
   }
   .wave-cont{
-  top: 43%;
+  bottom:0%;
+  left: 33%;
+  position: absolute;
+
 }
   .mob{
     display: block;
@@ -370,10 +373,25 @@ h3{
     position: absolute;
     top: 0;
     width: 57px;
-    float: right;
     color: #fff;
-    right: 2%;
+    right: 0%;
     z-index: 2;
+    /* display: flex;
+    flex-direction: column;
+    justify-items: end; */
+  }
+  .xl-2{
+    /* height: 40vh; */
+    margin-bottom: 0px;
+    position: absolute;
+    z-index: 10;
+    animation-name: drop;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes drop {
+    from {top: 0px; opacity: 0; color: #fff;}
+    to {top: 270px; color: #8eaf8e; opacity: 1; }
   }
   .hbg div{
     margin-bottom:5px;
@@ -448,8 +466,9 @@ h3{
   }
   .right{
     grid-row: 2/3;
-    width: 90%;
+    width: 100%;
     padding: 2% 5%;
+    margin-right:0%;
   }
   .abt-pic{
    align-self: center;
@@ -490,7 +509,7 @@ h3{
   }
   .proj-img{
     float: none;
-    object-fit: cover;
+    object-fit: contain;
   }
   .card-content{
     width: 100%;
